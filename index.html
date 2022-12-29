@@ -57,9 +57,9 @@
 
         startBtn.onclick = function()
         {
-            document.getElementById(
-                'rawValue'
-            ).innerHTML = "";
+            // document.getElementById(
+            //     'rawValue'
+            // ).innerHTML = "";
             navigator.mediaDevices.getUserMedia(medias)
                 .then(function(stream)
                 {
@@ -79,13 +79,13 @@
                                     for (barcode of barcodes)
                                     {
 
-                                        alert( barcode.rawValue);
-                                        console.log(
-                                            "value : " +
-                                            barcode.rawValue
-                                        );
-                                        console.log(
-                                            barcode);
+                                        // alert( barcode.rawValue);
+                                        // console.log(
+                                        //     "value : " +
+                                        //     barcode.rawValue
+                                        // );
+                                        // console.log(
+                                        //     barcode);
                                         document.getElementById(
                                                 'rawValue'
                                             ).innerHTML = barcode.rawValue;
