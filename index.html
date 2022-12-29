@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="manifest" href="manifest.json">
     <title>Barcode Detection PWA</title>
 </head>
 
@@ -18,21 +16,6 @@
     <button id="start">Start</button>
     <button id="stop">Stop</button>
     <script>
-        if ('serviceWorker' in navigator)
-        { 
-            window.addEventListener('load', () =>
-            {  
-                navigator.serviceWorker.register('sw.js')
-                    .then(registration =>
-                    {
-                        console.log(`Service Worker registered! Scope: ${registration.scope}`);
-                    })
-                    .catch(err =>
-                    {
-                        console.error(`Service Worker registration failed: ${err}`);
-                    }); 
-            });
-        }
 
         const video = document.getElementById('player');
         let videoTracks;
