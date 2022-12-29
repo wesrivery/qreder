@@ -87,10 +87,7 @@
                                             barcode);
                                         document.getElementById(
                                                 'rawValue'
-                                            ).innerHTML =
-                                            convertLink(
-                                                barcode.rawValue
-                                            );
+                                            ).innerHTML = barcode.rawValue;
                                     }
                                     if (barcode) stopVideo();
                                 }).catch(function(err)
